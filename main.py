@@ -33,9 +33,9 @@ class Customer:
 if __name__ == '__main__':
     try:
         customer_id = int(input("Input your customer ID: "))
-        cst = Customer(customer_id)
-        cst.create_user()
-        cst.save_json_file()
-        cst.display_info()
+        cust = Customer(customer_id)
+        cust.create_user()
+        cust.save_json_file()
+        cust.display_info()
     except ValueError:
         print("Invalid customer ID. Please enter a number.")
