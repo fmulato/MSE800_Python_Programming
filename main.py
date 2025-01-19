@@ -26,6 +26,7 @@ class Customer:
             "phone": self._phone
         }
         print(f"Data saved successfully")
+        print(f"Here are the data:")
         with open("customer.json", "w") as file:
             json.dump(data, file)
 
@@ -37,5 +38,6 @@ if __name__ == '__main__':
         cust.create_user()
         cust.save_json_file()
         cust.display_info()
+        print("Thank you for using our system.")
     except ValueError:
         print("Invalid customer ID. Please enter a number.")
