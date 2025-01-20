@@ -27,5 +27,6 @@ class Customer:
         }
         print(f"Data saved successfully")
         print(f"Here are the data:")
-        with open("customer.json", "w") as file:
+        with open("customer.json", "a") as file:
             json.dump(data, file)
+            file.write('\n')
